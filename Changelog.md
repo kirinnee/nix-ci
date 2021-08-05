@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/kirinnee/nix-ci/compare/v1.3.0...v1.4.0) (2021-08-05)
+
+### Features
+
+- ci try ([7203c18](https://github.com/kirinnee/nix-ci/commit/7203c189d3d2b795ea9ea72f0cbeeacabca0d46a))
+- ci try ([4070be3](https://github.com/kirinnee/nix-ci/commit/4070be3056fc45ea7df609ff5aababa8f1a4c4dc))
+
 ## [1.3.0](https://github.com/kirinnee/nix-ci/compare/v1.2.0...v1.3.0) (2021-08-05)
 
 ### Features
