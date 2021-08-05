@@ -4,7 +4,8 @@ on:
     tags:
       - v*.*.*
 jobs:
-  Publish Docker:
+  publish_docker:
+    name: Publish Docker
     runs-on: ubuntu:20.04
     steps:
       - name: Checkout Git

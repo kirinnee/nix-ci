@@ -4,7 +4,8 @@ on:
     branches:
       - main
 jobs:
-  Release:
+  release:
+    name: Release
     container: nixos/nix
     runs-on: ubuntu-20.04
     steps:
