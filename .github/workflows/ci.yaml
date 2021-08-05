@@ -1,0 +1,31 @@
+name: "Continous Integration"
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  Pre-Commit:
+
+  Build Docker:
+    runs-on: ubuntu:20.04
+    steps:
+      - name: Checkout Git
+        uses: actions/checkout@v2.3.4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v13
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Build and Push Docker
+        run: nix-shell shells.nix -A docker-cicd --run ./scripts/ci/docker-ci.sh
+        env:
+          DOMAIN: docker.pkg.github.com
+          GITHUB_REPO_REF: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_BRANCH: ${{ github.head_ref }}
+          CI_DOCKER_IMAGE: nix-ci
+          CI_DOCKER_CONTEXT: .
+          CI_DOCKER_FILE: Dockerfile
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          DOCKER_USER: ${{ github.actor }}
