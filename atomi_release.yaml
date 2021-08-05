@@ -28,7 +28,7 @@ plugins:
       prepareCmd: prettier -w Changelog.md
   - module: "@semantic-release/git"
     config:
-      message: "release: ${nextRelease.version}\n\n${nextRelease.notes}"
+      message: "release: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       assets:
         - Changelog.md
   - module: "@semantic-release/github"
