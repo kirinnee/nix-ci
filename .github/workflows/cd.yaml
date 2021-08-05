@@ -1,6 +1,6 @@
 name: "Continous Deployment"
 on:
-  create:
+  created:
     tags:
       - v*.*.*
 jobs:
