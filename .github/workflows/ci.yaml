@@ -31,6 +31,11 @@ jobs:
       - name: Checkout Git
         uses: actions/checkout@v2.3.4
 
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
       - name: Install Nix
         uses: cachix/install-nix-action@v13
         with:

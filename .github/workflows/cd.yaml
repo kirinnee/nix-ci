@@ -1,8 +1,7 @@
 name: "Continous Deployment"
 on:
-  created:
-    tags:
-      - v*.*.*
+  release:
+    type: [released]
 jobs:
   publish_docker:
     name: Publish Docker
