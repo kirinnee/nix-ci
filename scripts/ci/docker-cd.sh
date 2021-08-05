@@ -23,6 +23,10 @@ echo "${GITHUB_DOCKER_PASSWORD}" | docker login docker.pkg.github.com -u "${GITH
 IMAGE_ID="${DOMAIN}/${REPO_REF}/${CI_DOCKER_IMAGE}"
 IMAGE_ID=$(echo "${IMAGE_ID}" | tr '[:upper:]' '[:lower:]') # convert to lower case
 
+# Fix Tag
+# shellcheck disable=SC2016
+GITHUB_TAG="$(echo "${GITHUB_TAG}" | sd '^.*/v([^/]*)$' '$1')"
+
 # Generate image references
 LATEST_IMAGE_REF="${IMAGE_ID}:latest"
 CACHED_IMAGE_REF="${IMAGE_ID}:cache"

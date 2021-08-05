@@ -25,10 +25,13 @@ jobs:
         env:
           DOMAIN: docker.pkg.github.com
           GITHUB_REPO_REF: ${{ github.repository }}
-          GITHUB_TAG: ${{ github.sha }}
+          GITHUB_TAG: ${{ github.refs }}
+
           CI_DOCKER_IMAGE: nix-ci
           CI_DOCKER_CONTEXT: .
           CI_DOCKER_FILE: Dockerfile
+
+          EXTERNAL_IMAGE_NAME: kirinnee/nix-ci-sample
 
           GITHUB_DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_DOCKER_USER: ${{ github.actor }}
