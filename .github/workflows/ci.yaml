@@ -26,7 +26,7 @@ jobs:
 
   build_docker:
     name: Build Docker
-    runs-on: ubuntu:20.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout Git
         uses: actions/checkout@v2.3.4
