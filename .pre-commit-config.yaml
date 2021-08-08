@@ -21,6 +21,13 @@ repos:
       - id: hadolint
   - repo: local
     hooks:
+      - id: cfg-scripts
+        name: Configure Scripts
+        entry: pls cfg:scripts
+        files: ^.*\.sh$
+        pass_filenames: false
+        language: system
+
       - id: yaml-fmt
         name: Format YAML with prettier
         entry: pls fmt:yaml

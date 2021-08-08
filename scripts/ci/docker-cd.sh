@@ -3,13 +3,13 @@
 # check for necessary env vars
 [ "${DOMAIN}" = '' ] && echo "'DOMAIN' env var not set" && exit 1
 [ "${GITHUB_REPO_REF}" = '' ] && echo "'GITHUB_REPO_REF' env var not set" && exit 1
-[ "${GITHUB_TAG}" = '' ] && echo "'GITHUB_BRANCH' env var not set" && exit 1
+[ "${GITHUB_TAG}" = '' ] && echo "'GITHUB_TAG' env var not set" && exit 1
 
 [ "${CI_DOCKER_IMAGE}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
-[ "${CI_DOCKER_CONTEXT}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
-[ "${CI_DOCKERFILE}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
+[ "${CI_DOCKER_CONTEXT}" = '' ] && echo "'CI_DOCKER_CONTEXT' env var not set" && exit 1
+[ "${CI_DOCKERFILE}" = '' ] && echo "'CI_DOCKERFILE' env var not set" && exit 1
 
-[ "${EXTERNAL_IMAGE_NAME}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
+[ "${EXTERNAL_IMAGE_NAME}" = '' ] && echo "'EXTERNAL_IMAGE_NAME' env var not set" && exit 1
 
 [ "${GITHUB_DOCKER_PASSWORD}" = '' ] && echo "'GITHUB_DOCKER_PASSWORD' env var not set" && exit 1
 [ "${GITHUB_DOCKER_USER}" = '' ] && echo "'GITHUB_DOCKER_USER' env var not set" && exit 1
