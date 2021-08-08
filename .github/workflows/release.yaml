@@ -21,7 +21,7 @@ jobs:
           persist-credentials: false
 
       - name: Remove GitHooks
-        run: rm ./.git/hooks/*
+        run: rm ./.git/hooks/* || true
 
       - name: Release
         env:
