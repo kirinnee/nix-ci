@@ -1,3 +1,9 @@
+### [1.10.1](https://github.com/kirinnee/nix-ci/compare/v1.10.0...v1.10.1) (2021-08-08)
+
+### Bug Fixes
+
+- not presisting credentials for git ([366e141](https://github.com/kirinnee/nix-ci/commit/366e141815d9fc124627a4e3696248cb17ee7deb))
+
 ## [1.10.0](https://github.com/kirinnee/nix-ci/compare/v1.9.1...v1.10.0) (2021-08-08)
 
 ### Features
