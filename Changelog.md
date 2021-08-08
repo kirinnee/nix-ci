@@ -1,3 +1,9 @@
+### [1.6.2](https://github.com/kirinnee/nix-ci/compare/v1.6.1...v1.6.2) (2021-08-08)
+
+### Bug Fixes
+
+- github repo ref incorrect ([ff357a1](https://github.com/kirinnee/nix-ci/commit/ff357a1c5a3d995eafb5e15ee3fe2221f3cd5ea4))
+
 ### [1.6.1](https://github.com/kirinnee/nix-ci/compare/v1.6.0...v1.6.1) (2021-08-08)
 
 ### Bug Fixes
