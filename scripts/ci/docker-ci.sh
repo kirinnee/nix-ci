@@ -7,8 +7,8 @@
 [ "${GITHUB_BRANCH}" = '' ] && echo "'GITHUB_BRANCH' env var not set" && exit 1
 
 [ "${CI_DOCKER_IMAGE}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
-[ "${CI_DOCKER_CONTEXT}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
-[ "${CI_DOCKERFILE}" = '' ] && echo "'CI_DOCKER_IMAGE' env var not set" && exit 1
+[ "${CI_DOCKER_CONTEXT}" = '' ] && echo "'CI_DOCKER_CONTEXT' env var not set" && exit 1
+[ "${CI_DOCKERFILE}" = '' ] && echo "'CI_DOCKERFILE' env var not set" && exit 1
 
 [ "${DOCKER_PASSWORD}" = '' ] && echo "'DOCKER_PASSWORD' env var not set" && exit 1
 [ "${DOCKER_USER}" = '' ] && echo "'DOCKER_USER' env var not set" && exit 1

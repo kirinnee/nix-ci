@@ -51,8 +51,10 @@ jobs:
           GITHUB_REPO_REF: ${{ github.repository }}
           GITHUB_SHA: ${{ github.sha }}
           GITHUB_BRANCH: ${{ env.GITHUB_REF_SLUG }}
+
           CI_DOCKER_IMAGE: nix-ci
           CI_DOCKER_CONTEXT: .
-          CI_DOCKER_FILE: Dockerfile
+          CI_DOCKERFILE: Dockerfile
+
           DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
           DOCKER_USER: ${{ github.actor }}
