@@ -1,3 +1,9 @@
+## [1.10.0](https://github.com/kirinnee/nix-ci/compare/v1.9.1...v1.10.0) (2021-08-08)
+
+### Features
+
+- use PAT fro ci ([3064392](https://github.com/kirinnee/nix-ci/commit/306439223fce5ae6abede0cb2b0997bbc43ac18d))
+
 ### [1.9.1](https://github.com/kirinnee/nix-ci/compare/v1.9.0...v1.9.1) (2021-08-08)
 
 ### Bug Fixes
