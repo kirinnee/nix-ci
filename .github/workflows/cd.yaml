@@ -22,7 +22,7 @@ jobs:
         env:
           DOMAIN: docker.pkg.github.com
           GITHUB_REPO_REF: ${{ github.repository }}
-          GITHUB_TAG: ${{ github.refs }}
+          GITHUB_TAG: ${{ env.GITHUB_REF_SLUG }}
 
           CI_DOCKER_IMAGE: nix-ci
           CI_DOCKER_CONTEXT: .
