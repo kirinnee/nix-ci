@@ -1,3 +1,9 @@
+### [1.11.1](https://github.com/kirinnee/nix-ci/compare/v1.11.0...v1.11.1) (2021-08-08)
+
+### Bug Fixes
+
+- use github slugs ([bb0c428](https://github.com/kirinnee/nix-ci/commit/bb0c428005eac8f7c114dff30733a7c98b4b9396))
+
 ## [1.11.0](https://github.com/kirinnee/nix-ci/compare/v1.10.1...v1.11.0) (2021-08-08)
 
 ### Features
