@@ -36,6 +36,9 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
 
+      - name: Inject Github Variables
+        uses: rlespinasse/github-slug-action@v3.x
+
       - name: Install Nix
         uses: cachix/install-nix-action@v13
         with:
@@ -47,7 +50,7 @@ jobs:
           DOMAIN: docker.pkg.github.com
           GITHUB_REPO_REF: ${{ github.repository }}
           GITHUB_SHA: ${{ github.sha }}
-          GITHUB_BRANCH: ${{ github.head_ref }}
+          GITHUB_BRANCH: ${{ env.GITHUB_REF_SLUG }}
           CI_DOCKER_IMAGE: nix-ci
           CI_DOCKER_CONTEXT: .
           CI_DOCKER_FILE: Dockerfile
