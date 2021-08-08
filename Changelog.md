@@ -1,3 +1,14 @@
+## [1.8.0](https://github.com/kirinnee/nix-ci/compare/v1.7.0...v1.8.0) (2021-08-08)
+
+### Features
+
+- bump ci ([82473d2](https://github.com/kirinnee/nix-ci/commit/82473d2b304680b1c3e37ef5fe71b8ecd862af10))
+- new ci system ([7e149dd](https://github.com/kirinnee/nix-ci/commit/7e149dd326e2872d28e8a8fa87143c7e988715d3))
+- update ci ([58b701e](https://github.com/kirinnee/nix-ci/commit/58b701e4cf3d1556da906ecd89e778020a51cf4e))
+- update ci to v1.1.0 ([4d95932](https://github.com/kirinnee/nix-ci/commit/4d9593283e581deba264893e8135cbc8acb565f4))
+- update ci to v1.2.0 ([c2365a4](https://github.com/kirinnee/nix-ci/commit/c2365a4a543c49eba1eb3db7b7df8ae665a17db4))
+- update ci to v1.2.1 ([152fe7c](https://github.com/kirinnee/nix-ci/commit/152fe7c96347dc602ca4bd5b68d1c27840a6f4b5))
+
 ## [1.7.0](https://github.com/kirinnee/nix-ci/compare/v1.6.2...v1.7.0) (2021-08-08)
 
 ### Features
