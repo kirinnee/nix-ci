@@ -1,3 +1,9 @@
+### [1.6.1](https://github.com/kirinnee/nix-ci/compare/v1.6.0...v1.6.1) (2021-08-08)
+
+### Bug Fixes
+
+- incorrect env var ([c77b581](https://github.com/kirinnee/nix-ci/commit/c77b5817279218ff62c24bb22bbe5755a0afe6b3))
+
 ## [1.6.0](https://github.com/kirinnee/nix-ci/compare/v1.5.0...v1.6.0) (2021-08-08)
 
 ### Features
