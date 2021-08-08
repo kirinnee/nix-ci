@@ -1,3 +1,9 @@
+## [1.9.0](https://github.com/kirinnee/nix-ci/compare/v1.8.0...v1.9.0) (2021-08-08)
+
+### Features
+
+- update ci from v1.2.1 to v2.1.0 ([c13a5f2](https://github.com/kirinnee/nix-ci/commit/c13a5f23d7c5c705f74334c47229456438e6170b))
+
 ## [1.8.0](https://github.com/kirinnee/nix-ci/compare/v1.7.0...v1.8.0) (2021-08-08)
 
 ### Features
