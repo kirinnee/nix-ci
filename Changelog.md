@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/kirinnee/nix-ci/compare/v1.6.2...v1.7.0) (2021-08-08)
+
+### Features
+
+- new ci ([841c587](https://github.com/kirinnee/nix-ci/commit/841c58770cf8f1eb525a745b2535c905acf39828))
+
 ### [1.6.2](https://github.com/kirinnee/nix-ci/compare/v1.6.1...v1.6.2) (2021-08-08)
 
 ### Bug Fixes
