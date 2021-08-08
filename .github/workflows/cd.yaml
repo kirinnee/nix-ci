@@ -1,7 +1,8 @@
 name: "Continous Deployment"
 on:
-  release:
-    type: [released]
+  push:
+    tags:
+      - v*.*.*
 jobs:
   publish_docker:
     name: Publish Docker
@@ -9,11 +10,6 @@ jobs:
     steps:
       - name: Checkout Git
         uses: actions/checkout@v2.3.4
-
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
 
       - name: Inject Github Variables
         uses: rlespinasse/github-slug-action@v3.x
