@@ -20,7 +20,7 @@
 echo "${GITHUB_DOCKER_PASSWORD}" | docker login docker.pkg.github.com -u "${GITHUB_DOCKER_USER}" --password-stdin
 
 # Obtain image
-IMAGE_ID="${DOMAIN}/${REPO_REF}/${CI_DOCKER_IMAGE}"
+IMAGE_ID="${DOMAIN}/${GITHUB_REPO_REF}/${CI_DOCKER_IMAGE}"
 IMAGE_ID=$(echo "${IMAGE_ID}" | tr '[:upper:]' '[:lower:]') # convert to lower case
 
 # Fix Tag
