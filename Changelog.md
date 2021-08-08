@@ -1,3 +1,9 @@
+### [1.9.1](https://github.com/kirinnee/nix-ci/compare/v1.9.0...v1.9.1) (2021-08-08)
+
+### Bug Fixes
+
+- incorrect binary cache ([ece668e](https://github.com/kirinnee/nix-ci/commit/ece668e20b19f8cadfbb305da7b4be3f706e8ea0))
+
 ## [1.9.0](https://github.com/kirinnee/nix-ci/compare/v1.8.0...v1.9.0) (2021-08-08)
 
 ### Features
